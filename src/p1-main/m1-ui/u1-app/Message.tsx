@@ -7,19 +7,14 @@ function Message(props: MessageDataType) {
     return (
         <div className={s.message}>
 
-            <div className={s.avatarImg}>
-                <img src = {props.avatar}></img>
-            </div>
-            <div className={s.text}>
-                <div className={s.textName}>
-                    {props.name}
-                </div>
-                <input type='text' value={props.message}/>
-                <div className={s.textTime}>
-                    {props.time}
-                </div>
-            </div>
+                <img src = {props.avatar} alt={'avatar'} className={s.avatarImg}/>
 
+            <div className={s.circle}></div>
+            <div className={s.text}>
+                    <div className={s.textName}>{props.name}</div>
+                    <div className={s.textContent}>{props.message}</div>
+                <div className={s.textTime}>{props.time}</div>
+            </div>
         </div>
 
     )

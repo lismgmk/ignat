@@ -1,6 +1,6 @@
 import React from 'react'
 
-function AlternativeMessage() {
+function AlternativeAffairs() {
     return (
         <div>
 
@@ -8,4 +8,4 @@ function AlternativeMessage() {
     )
 }
 
-export default AlternativeMessage
+export default AlternativeAffairs
