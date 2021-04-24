@@ -1,5 +1,8 @@
+import Button from '@material-ui/core/Button';
 import React from 'react'
 import {AffairType} from "./HW2";
+import s from "./Affairs.module.css";
+import {Box, Container} from "@material-ui/core";
 
 type AffairPropsType = {
     // key не нужно типизировать
@@ -8,17 +11,21 @@ type AffairPropsType = {
 }
 
 function Affair(props: AffairPropsType) {
-    debugger
+
     const deleteCallback = () => {
         debugger
         props.deleteAffairCallback(props.affair._id)
     }// need to fix
 
     return (
-        <div>
-            // show some text
+        <div className={s.marginLeft}>
+            <div>
+                // show some text
+            </div>
 
-            <button onClick={deleteCallback}>X</button>
+            <span className={s.marginTop}>
+                <Button variant='contained' size="small" color="secondary" onClick={deleteCallback}>X</Button>
+            </span>
         </div>
     )
 }
