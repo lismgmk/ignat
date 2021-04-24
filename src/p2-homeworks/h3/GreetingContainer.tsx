@@ -1,6 +1,7 @@
 import React, {ChangeEvent, useState} from 'react'
 import Greeting from './Greeting'
 import {UserType} from "./HW3";
+import { Alert, AlertTitle } from '@material-ui/lab';
 
 type GreetingContainerPropsType = {
     users: Array<UserType> // need to fix any
@@ -14,24 +15,24 @@ type GreetingContainerPropsType = {
 // уровень локальной логики
 const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => { // деструктуризация пропсов
     const [name, setName] = useState<string>('') // need to fix any
-    const [error, setError] = useState<boolean>(false) // need to fix any
+    const [error, setError] = useState<string>('') // need to fix any
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
-       if(e.currentTarget.value !== ''){
+       if(e.currentTarget.value.trim()){
            setName(e.currentTarget.value)
+          error && setError('')
        }
        else {
-           setName('')
-           setError(true)}
+           name && setName('')
+           setError('incorrect value')}
          // need to fix
         console.log(name)
     }
 
     const addUser = () => {
-
-            addUserCallback(name)
-
-
+        addUserCallback(name);
+        alert(`Hello ${name}!!!`);
+        setName('');
     }
     const totalUsers = users.length
     // need to fix
