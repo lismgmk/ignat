@@ -1,0 +1,36 @@
+.activeLink{
+    color: red;
+    font-size: 20px;
+    border: 2px solid red;
+}
+.mainContainer{
+    position: relative;
+    /*width: 700px;*/
+    height: 100px;
+    background-color: burlywood;
+}
+.container{
+    position: absolute;
+    animation: move 3s infinite;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    display: flex;
+    align-items: center;
+}
+@keyframes move {
+    from {
+        left: -400px;
+        top: 0;
+    }
+    to {
+        left: 345px;
+
+    }
+}
+.linkStyle{
+    font-size: 20px;
+    margin: 20px;
+    border: 1px solid darkmagenta;
+    text-decoration: none;
+    padding: 5px;
+}
