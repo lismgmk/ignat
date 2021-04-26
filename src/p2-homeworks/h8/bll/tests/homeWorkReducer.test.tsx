@@ -8,8 +8,11 @@ export type stateType = {
 }
 
 export type actionType = {
-    type: string
-    payload: "up" | 18 | "down"
+    type: "sort"
+    payload: "up" | "down"
+} | {
+    type: "check"
+    payload: number
 }
 
 let initialState: stateType[];
