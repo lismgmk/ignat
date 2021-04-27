@@ -11,9 +11,6 @@ function Header() {
                 <NavLink to={PATH.JUNIOR} className={s.linkStyle} activeClassName={s.activeLink}>Junior</NavLink>
                 <NavLink to={PATH.JUNIOR_PLUS} className={s.linkStyle} activeClassName={s.activeLink}>Junior++</NavLink>
             </div>
-
-
-
         </div>
     )
 }
