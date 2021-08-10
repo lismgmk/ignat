@@ -21,3 +21,20 @@
 .some-text {
     color: darkslateblue;
 }
+
+
+
+.light {
+    background: khaki;
+}
+
+.light-text {
+    color: brown;
+}
+.green {
+    background: green;
+}
+
+.green-text {
+    color: aliceblue;
+}
