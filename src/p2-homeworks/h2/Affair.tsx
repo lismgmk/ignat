@@ -20,7 +20,7 @@ function Affair(props: AffairPropsType) {
     return (
         <div className={s.marginLeft}>
             <div>
-                // show some text
+                {props.affair.name}
             </div>
 
             <span className={s.marginTop}>

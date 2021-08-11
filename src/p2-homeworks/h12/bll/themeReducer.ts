@@ -17,4 +17,4 @@ export const themeReducer = (state = initState, action: changeThemeCType): Initi
 
 export const changeThemeC = (theme: themeType) => ({type: 'CHANGE-THEME' , theme} as const)
 
-type changeThemeCType= ReturnType<typeof changeThemeC>
+export type changeThemeCType= ReturnType<typeof changeThemeC>
