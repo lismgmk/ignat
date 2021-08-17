@@ -5,15 +5,12 @@ function HW9() {
     return (
         <div>
             <hr/>
-            homeworks 9
+           <h3>Start Clock</h3>
 
-            {/*should work (должно работать)*/}
+
             <Clock/>
 
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeClock/>*/}
-            <hr/>
+
         </div>
     );
 }

@@ -5,9 +5,9 @@ import s from "./Affairs.module.css";
 import {Box, Container} from "@material-ui/core";
 
 type AffairPropsType = {
-    // key не нужно типизировать
-    affair: AffairType // need to fix any
-    deleteAffairCallback: ( _id: number) => void // need to fix any
+
+    affair: AffairType
+    deleteAffairCallback: ( _id: number) => void
 }
 
 function Affair(props: AffairPropsType) {
@@ -15,7 +15,7 @@ function Affair(props: AffairPropsType) {
     const deleteCallback = () => {
         debugger
         props.deleteAffairCallback(props.affair._id)
-    }// need to fix
+    }
 
     return (
         <div className={s.marginLeft}>

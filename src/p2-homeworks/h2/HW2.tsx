@@ -41,19 +41,14 @@ function HW2() {
     return (
         <div>
             <hr/>
-            homeworks 2
 
-            {/*should work (должно работать)*/}
+            <h3>{'Sort or remove items'}</h3>
             <Affairs
                 data={filteredAffairs}
                 setFilter={setFilter}
                 deleteAffairCallback={deleteAffairCallback}
             />
 
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeAffairs/>*/}
-            <hr/>
         </div>
     )
 }

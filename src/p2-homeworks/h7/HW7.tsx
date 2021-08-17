@@ -11,8 +11,7 @@ function HW7() {
         <div>
             <hr/>
             homeworks 7
-
-            {/*should work (должно работать)*/}
+<h3>Select connect with Radio</h3>
             <div>
                 <SuperSelect
                     options={arr}
@@ -29,11 +28,7 @@ function HW7() {
                 />
             </div>
 
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperSelect/>*/}
-            {/*<AlternativeSuperRadio/>*/}
-            <hr/>
+
         </div>
     );
 }

@@ -16,7 +16,7 @@ function HW12() {
         <div className={s[theme.theme]}>
             <hr/>
             <span className={s[theme.theme + '-text']}>
-                homeworks 12
+               <h3>Change color</h3>
             </span>
             <SuperRadio
                 name={"radio"}
@@ -26,8 +26,7 @@ function HW12() {
                     dispatch(changeThemeC(e))
                 }}
             />
-            {/*should work (должно работать)*/}
-            {/*SuperSelect or SuperRadio*/}
+
 
             <hr/>
         </div>

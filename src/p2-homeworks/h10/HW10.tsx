@@ -23,9 +23,8 @@ function HW10() {
     return (
         <div>
             <hr/>
-            homeworks 10
+            <h3>Show simple loader</h3>
 
-            {/*should work (должно работать)*/}
             {load
                 ? (
                     <div>крутилка...</div>
@@ -36,10 +35,7 @@ function HW10() {
                 )
             }
 
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<Alternative/>*/}
-            <hr/>
+
         </div>
     );
 }

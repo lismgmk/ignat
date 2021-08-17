@@ -16,8 +16,7 @@ function HW11() {
             <hr/>
             homeworks 11
 
-
-            {/*should work (должно работать)*/}
+<h3>Custom Range</h3>
             <div>
                 <span>{value1}</span>
                 <SuperRange
@@ -25,7 +24,6 @@ function HW11() {
                     value1={value1}
 
 
-                    // сделать так чтоб value1 изменялось
                 />
             </div>
 
@@ -35,16 +33,11 @@ function HW11() {
                     firstVal={value1}
                     onChangeRange={changeValue}
 
-                    // сделать так чтоб value1 и value2 изменялось
                 />
 
             </div>
 
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperRange/>*/}
-            {/*<AlternativeSuperDoubleRange/>*/}
-            <hr/>
+
         </div>
     );
 }

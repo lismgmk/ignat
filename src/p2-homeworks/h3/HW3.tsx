@@ -2,17 +2,16 @@ import React, {useState} from 'react'
 import GreetingContainer from './GreetingContainer'
 import {v1} from "uuid";
 
-// types
 export type UserType = {
-    _id: string // need to fix any
-    name: string // need to fix any
+    _id: string
+    name: string
 }
 
-// уровень работы с глобальными данными
-function HW3() {
-    const [users, setUsers] = useState<Array<UserType>>([]) // need to fix any
 
-    const addUserCallback = (name: string) => { // need to fix any
+function HW3() {
+    const [users, setUsers] = useState<Array<UserType>>([])
+
+    const addUserCallback = (name: string) => {
        const newId = v1()
         let newUser = {
             _id: newId,
@@ -20,20 +19,19 @@ function HW3() {
         }
 
        const userCopy= [...users, newUser]
-        setUsers(userCopy) // need to fix
+        setUsers(userCopy)
     }
 
     return (
         <div>
             <hr/>
-            homeworks 3
 
-            {/*should work (должно работать)*/}
+<h3>Enter something</h3>
+
             <GreetingContainer users={users} addUserCallback={addUserCallback}/>
             {console.log(users)}
             <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeGreeting/>*/}
+
             <hr/>
         </div>
     )

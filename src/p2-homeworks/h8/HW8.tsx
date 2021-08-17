@@ -27,19 +27,15 @@ function HW8() {
     return (
         <div>
             <hr/>
-            homeworks 8
+            <h3>Sort elements</h3>
 
-            {/*should work (должно работать)*/}
 
             {finalPeople}
             <div><SuperButton onClick={sortUp}>sort up</SuperButton></div>
             <div><SuperButton onClick={sortDown}>sort down</SuperButton></div>
             <div><SuperButton onClick={checkAge18}>check age 18</SuperButton></div>
 
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativePeople/>*/}
-            <hr/>
+
         </div>
     );
 }
